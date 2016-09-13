@@ -1,0 +1,16 @@
+@import "../css/reset.css";
+getShadowWidth()
+	arguments[0]/arguments[1] arguments[0]+arguments[1]
+setBackgroundColor()
+	background-color arguments[1]
+.func
+	width 200px
+	height 40px
+	border 2px solid
+	box-shadow 0 0 getShadowWidth(@width, @height)[1] 0 #0f0
+	setBackgroundColor #f00 #00f
+
+font-size-scale = 1 2 3 4 5
+for num in font-size-scale
+	div:nth-of-type({num})
+		font-size (num*20)px
